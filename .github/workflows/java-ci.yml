@@ -50,8 +50,8 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/simple-service-${{ steps.version.outputs.TAG_NAME }}-jar-with-dependencies.jar
-          asset_name: simple-service-${{ steps.version.outputs.TAG_NAME }}-jar-with-dependencies.jar
+          file: target/simple-service-${{ steps.version.outputs.TAG_NAME }}.jar
+          asset_name: simple-service-${{ steps.version.outputs.TAG_NAME }}.jar
           tag: ${{ steps.version.outputs.TAG_NAME }}
           release_name: ${{ steps.version.outputs.TAG_NAME }}
           overwrite: true
