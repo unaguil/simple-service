@@ -19,6 +19,10 @@ public class User {
 	private String surname;
 
 	// Default public constructor required for serialization
+
+	/**
+	 * Esto es una prueba
+	 */
 	public User() {
 
 	}
